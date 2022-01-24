@@ -1,0 +1,119 @@
+body{
+align-items: center;
+justify-content: center;
+}
+.parent {
+/*background: #CCCCCC;8*/
+position:relative;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.line{
+	position:absolute;
+	height:95%;
+	width:10px;
+	background:red;
+	border-radius:50px;
+	-ms-transform: rotate(-48deg);
+	transform: rotate(-42deg);
+	display:none;
+}
+.radio{
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-top:100px;
+	margin-bottom:30px;
+	
+}
+.grid-container {
+	display:grid;
+	grid-template-columns: auto auto auto;
+	grid-row-gap: 5px;
+	grid-column-gap: 2px;
+	background-color: #B2B2B2;
+	padding: 10px;
+	width:250px;
+	height:255px;
+	
+}
+
+.grid-item{
+	  background-color: rgba(255, 255, 255, 0.9);
+	  text-align: center;
+	  height:80px;
+	  width:80px;
+	  border-radius:5px;
+	  position: relative;
+
+}
+
+.grid-item:hover {
+  box-shadow: 0 0 11px rgba(0, 255, 234,.7); 
+  margin-top:-5px;
+  margin-bottom:5px;
+}
+
+.grid-container input[type="radio"] {
+display:none;
+}
+
+/*.grid-container input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}*/
+
+
+#msg {
+	display:none;
+	position:fixed;
+	padding: 20px 30px;
+	background: yellow;
+	border-radius: 10px;
+	margin-left:44%;
+	top:0;
+	transition: visibility 0s 2s, opacity 2s linear;
+	
+	animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+#p{
+	text-align:center;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        }
+    100% {
+        opacity: 1;
+        }
+}
+	
+.playAgain{
+	position:fixed;
+	padding: 20px 30px;
+	background: yellow;
+	border-radius: 10px;
+	margin-left:45%;
+	margin-top:20%;
+	align-items: center;
+	justify-content: center;
+
+}
+	
+.playAgain button{
+	cursor:pointer;
+}
+
+.overlay{
+        width: 100%;
+        height: 100%;            
+        position: absolute;
+        top: 0;
+        left: 0;
+		background: rgba(23, 23, 23, 0.4);
+		display:none;
+}

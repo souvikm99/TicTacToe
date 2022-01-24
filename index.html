@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tic Tac Toe!</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<script src="script.js"></script>
+
+
+
+		<div class="radio">
+        <input type="radio" name="size" value="X" id="xl" onclick="radioBtn()">
+        <label for="xl">X</label>
+		<input type="radio" name="size" value="O" id="xl" onclick="radioBtn()">
+        <label for="xl">O</label>
+		</div>
+		
+<div class="parent">
+
+	
+	<div class="grid-container">
+
+		<input type="radio" name="tile" value="1" id="tile1" onclick="XO()">
+		<label  for="tile1" id="1">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="2" id="tile2" onclick="XO()">
+		<label  for="tile2" id="2">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="3" id="tile3" onclick="XO()">
+		<label  for="tile3" id="3">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="4" id="tile4" onclick="XO()">
+		<label  for="tile4" id="4">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="5" id="tile5" onclick="XO()">
+		<label  for="tile5" id="5">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="6" id="tile6" onclick="XO()">
+		<label  for="tile6" id="6">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="7" id="tile7" onclick="XO()">
+		<label  for="tile7" id="7">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="8" id="tile8" onclick="XO()">
+		<label  for="tile8" id="8">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+		
+		<input type="radio" name="tile" value="9" id="tile9" onclick="XO()">
+		<label  for="tile9" id="9">
+		<img src="blank.png" class="grid-item"/>
+		</label>
+	</div>
+	<div class="line" id="line"></div>
+	
+</div>
+
+<div class="overlay" id="overlay">
+<div class="playAgain">
+<p id="p">You are a winner</p><br>
+<button onclick="reload()">Play Again</button>  
+</div>
+</div>
+
+<div id="msg">
+
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
